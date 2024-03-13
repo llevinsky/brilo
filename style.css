@@ -1,0 +1,203 @@
+/* Styly pro stránku */
+
+/* Import fontu 'Source Code Pro' z Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definice barevných proměnných */
+:root {
+    /* Primary colors */
+    --lavender: #E7F0FF;
+    --shadow_blue: #7387AC;
+    --very_light_blue: #5F7AFF;
+    --palatinate: #264AFB;
+    --cetacean: #00065B;
+    --very_light_blue: #5F7AFF;
+
+    /* Secondary colors */
+    --guppie_green: #06EB83;
+    --carribean_green: #01D684;
+    --shamrock_green: #009E61;
+}
+
+
+
+/* Styly pro celý dokument */
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #fff;
+    color: var(--cetacean);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+p,
+li {
+    font-family: "Montserrat", sans-serif;
+    color: var(--cetacean);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.bg-lavender {
+    background-color: var(--lavender);
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    width: 12rem;
+    background-color: var(--guppie_green);
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--cetacean);
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: var(--carribean_green);
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--cetacean);
+}
+
+.btn-secondary {
+    width: 12rem;
+    background-color: #fff;
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--carribean_green);
+    padding: 10px 25px;
+    box-shadow: 0px 10px 40px #d4d4d4;
+}
+
+.btn-secondary:hover {
+    background-color: var(--lavender);
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: var(--cetacean);
+    padding: 10px 25px;
+    box-shadow: 0px 10px 20px #d4d4d4;
+}
+
+.active-btn,
+.active-btn:hover {
+    background-color: var(--palatinate);
+    border: none;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #fff;
+    padding: 10px 25px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item a {
+    color: var(--cetacean)
+}
+
+.nav-link,
+.dropdown-item {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.active,
+.dropdown-item:hover {
+    border-bottom: 2px solid var(--guppie_green);
+}
+
+.mb-7 {
+    margin-bottom: 7rem;
+}
+
+.py-7 {
+    padding: 7rem 0;
+}
+
+.image-container {
+    position: relative;
+}
+
+.max-w-950 {
+    width: 100%;
+    max-width: 950px;
+}
+
+.h-responsive {
+    height: 220px;
+}
+
+footer a {
+    color: var(--carribean_green);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: var(--carribean_green);
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+#footer-border {
+    border-top: 5px solid var(--lavender)
+}
+
+@media only screen and (max-width: 991px) {
+    .h-responsive {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .h-responsive {
+        height: auto;
+    }
+}
